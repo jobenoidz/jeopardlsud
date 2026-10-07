@@ -7,7 +7,7 @@ type CategoryKey = keyof Board;
 const categories: { key: CategoryKey; label: string }[] = [
     { key: 'science', label: 'Science' },
     { key: 'math', label: 'Math' },
-    { key: 'ict', label: 'ICT' },
+    { key: 'ict', label: 'Tech' },
 ];
 export default function QuestionBoard({
     board,
