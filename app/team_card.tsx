@@ -16,14 +16,13 @@ export default function TeamCard({
 }) {
     return (
         <div className="grid min-h-0 min-w-0 flex-1 grid-cols-[4fr_3fr] items-center gap-2 overflow-hidden border border-blue-800 bg-blue-900 p-2 text-white shadow-lg shadow-black/20">
-            <div className="flex h-full min-h-0 min-w-0 items-center justify-center overflow-hidden">
-                <label className="sr-only" htmlFor={`team-${team.id}`}>Team Name</label>
-                <input
-                    className="h-full min-w-0 w-full border border-blue-800 bg-blue-950 px-2 py-2 text-center text-4xl outline-none transition-colors placeholder:text-blue-300 focus:border-orange-400 focus:ring-2 focus:ring-orange-400"
+            <div className="flex h-full min-h-0 min-w-0 items-center  justify-center overflow-hidden">
+                <p
+                    className="flex h-full min-w-0 w-full items-center justify-center border border-blue-800 bg-blue-950 px-2 py-2 text-center text-4xl outline-none transition-colors placeholder:text-blue-300 focus:border-orange-400 focus:ring-2 focus:ring-orange-400"
                     id={`team-${team.id}`}
-                    value={team.name}
-                    onChange={(event) => onNameChange(team.id, event.target.value)}
-                />
+                >
+                    {team.name}
+                </p>
             </div>
             <div className="grid h-full min-h-0 min-w-0 grid-rows-[2fr_1fr] gap-1">
                 <div className="flex min-h-0 flex-col items-center justify-center gap-0 border border-blue-800 bg-blue-950">

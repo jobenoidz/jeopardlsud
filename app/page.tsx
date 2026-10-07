@@ -11,9 +11,10 @@ type TeamAction =
   | { type: 'changeScore'; teamId: number; amount: number };
 
 function createInitialTeams(): Team[] {
+  const names = ['Adobo', 'Sinigang', 'Menudo', 'Nilaga', 'Sisig']
   return Array.from({ length: 5 }, (_, index) => ({
     id: index + 1,
-    name: `Team ${index + 1}`,
+    name: `Team ${names[index]}`,
     score: 0,
   }));
 }
